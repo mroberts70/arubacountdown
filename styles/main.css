@@ -7,7 +7,7 @@ html {
     background-image: url("../images/aruba-2024-03-23.jpg");
     background-repeat: no-repeat;
     background-size:cover;
-    background-position: right;
+    background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
 }  
