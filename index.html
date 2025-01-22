@@ -22,7 +22,7 @@
         <div>
             <img class="logo-image" src="images/arubalogo-png-1555.png">
             <h2>
-                <p>7<sup>th</sup> Aruba Trip Countdown!</p>
+                <p>8<sup>th</sup> Aruba Trip Countdown!</p>
             </h2>
         </div>
     </header>
@@ -31,29 +31,18 @@
 
 
         <div class="countdown">
-            <p class="the-countdown text-outline" id="the-countdown"></p>
-            <p class="spacer-p text-outline">to departure</p>
-            <p class="spacer-p"><i class="text-outline">Tuesday March 18 2025!</i></p>
+            <p class="the-countdown" id="the-countdown"></p>
+            <p class="text-outline">to departure!</p>
+            <p><i class="text-outline">Tues Mar 18 2025</i></p>
             
         </div>
 
 
-        <!-- <div class="weather">
-            <ul><h2>Aruba Weather:</h2>
-                <li><a href="https://weather.com/weather/tenday/l/267e692668bb35a295b59200880bc3427eb5d015957788f53a39b5439835de42" target="_BLANK">Weather Channel </a></li>
-                <li><a href="https://www.accuweather.com/en/us/errol-nh/03579/daily-weather-forecast/344412?day=1" target="_BLANK">Accuweather </a></li>
-                <li><a href="https://www.wunderground.com/forecast/us/nh/errol/03579?cm_ven=localwx_10day" target="_BLANK">Weather Underground </a></li>
-              </ul>      
-        </div> -->
 
     </main>
 
     <footer>
-        <p>&copy; 2019-<span id="current-year"></span> Mike Roberts</p>
-        <div class="shroooms">
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-
-        </div>
+        <p class="text-outline">&copy; 2019-<span id="current-year"></span> Mike Roberts</p>
     </footer>
 
     <!-- Javascript - Get Current Year for the Footer -->
@@ -82,54 +71,17 @@
             
           // Time calculations for days, hours, minutes and seconds
           var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
             
-          if (minutes < 10) {
-              minutes = "0" + minutes;
-          }
-          if (seconds < 10) {
-              seconds = "0" + seconds;
-          }
+          // Output the result in an element with id="the-countdown"
+          document.getElementById("the-countdown").innerHTML = days + "<br>DAYS!";
             
-          // Output the result in an element with id="demo"
-          document.getElementById("the-countdown").innerHTML = days + "<br>DAYS<br>";
-            
-          // If the count down is over, write some text 
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("the-countdown").innerHTML = "<img src='images/mushroom.png'>";
-          }
-        }, 1000);
+
+         }, 1000);
         </script>
 
 
-        <!-- Javascript - Modal Image Box -->
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
-    
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-            }
-    
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-    
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-            modal.style.display = "none";
-            }
-        </script>
 
-        
 
 
 
