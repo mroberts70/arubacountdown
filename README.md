@@ -1,7 +1,11 @@
 # arubacountdown
-A webpage counting down to our March of 2024 Aruba Vacation!
+A webpage counting down to our next Aruba Vacation!
 
 
 # 2024-04-27
 
 Updated to count down to our August of 2024 Aruba Vacation!
+
+# 2025-01-05
+
+Updated to count down to March 2025 trip
