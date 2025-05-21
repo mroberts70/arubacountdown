@@ -4,19 +4,18 @@
     box-sizing: border-box;
 }
 html {
-    background-image: url("../images/aruba-2024-03-23.jpg");
+    min-height: 100vh;
+}  
+body {
+    background-color: rgb(209, 209, 255);
+    background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
     background-attachment: fixed;
-    min-height: 100vh;
-}  
-body {
     font-family: Boogaloo, Arial, Helvetica, sans-serif;
     font-size: 170%;
     font-weight: 600;
-    /* width: 100%;
-    height: 100%; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
