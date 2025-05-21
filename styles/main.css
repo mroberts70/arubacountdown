@@ -75,7 +75,7 @@ main div {
     text-align: center;
     font-size: 3rem;
     aspect-ratio: 1;
-    color: black;
+    /* color: black; */
 }
 .text-outline {
     text-shadow: 2px 2px 4px black;
