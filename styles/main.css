@@ -22,13 +22,13 @@ body {
     justify-content:center;
     align-items:center;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 header {
     width: 100%;
-    background-color: rgba(152, 209, 247, 0.603);
+    /* background-color: rgba(152, 209, 247, 0.25); */
     color: rgb(46, 5, 141);
-    box-shadow: 0 3px 15px 0 gray;
+    /* box-shadow: 0 3px 15px 0 gray; */
     /* margin-bottom: 25px; */
 }
 header div {
@@ -92,6 +92,10 @@ h5 {
 a:link, a:visited {
     color: rgb(152, 209, 247);
     font-size: 2.5rem;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
 
 
