@@ -8,7 +8,7 @@ html {
 }  
 body {
     background-color: rgb(209, 209, 255);
-    background-blend-mode: multiply;
+    /* background-blend-mode: multiply; */
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
