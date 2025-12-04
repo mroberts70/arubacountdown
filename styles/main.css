@@ -1,52 +1,58 @@
-* { 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
-    background-image: url("../images/aruba-2024-03-23.jpg");
+    min-height: 100vh;
+}
+
+body {
+    background-color: rgb(209, 209, 255);
+    /* background-blend-mode: multiply; */
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    min-height: 100vh;
-}  
-body {
     font-family: Boogaloo, Arial, Helvetica, sans-serif;
     font-size: 170%;
     font-weight: 600;
-    /* width: 100%;
-    height: 100%; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     position: relative;
     overflow-x: hidden;
 }
+
 header {
     width: 100%;
-    background-color: rgba(152, 209, 247, 0.603);
+    /* background-color: rgba(152, 209, 247, 0.25); */
     color: rgb(46, 5, 141);
-    box-shadow: 0 3px 15px 0 gray;
+    /* box-shadow: 0 3px 15px 0 gray; */
     /* margin-bottom: 25px; */
 }
+
 header div {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
- 
+
 }
+
 .logo-image {
     max-width: 300px;
 }
+
 header h2 {
     margin-right: auto;
     font-size: 200%;
     margin: auto 0;
 }
+
 main {
     /* width: 100%;
     height: 100%; */
@@ -57,9 +63,11 @@ main {
     align-items: center;
     gap: 2.5em;
 }
+
 main div {
     margin-bottom: .25em;
 }
+
 .countdown {
     display: flex;
     flex-direction: column;
@@ -68,6 +76,7 @@ main div {
     text-align: center;
     font-variant: small-caps;
 }
+
 .the-countdown {
     margin: .75em;
     padding: 1em;
@@ -76,11 +85,13 @@ main div {
     text-align: center;
     font-size: 3rem;
     aspect-ratio: 1;
-    color: black;
+    /* color: black; */
 }
+
 .text-outline {
     text-shadow: 2px 2px 4px black;
 }
+
 sup {
     font-size: 60%;
     text-align: top;
@@ -90,11 +101,38 @@ h5 {
     margin-block: .25em;
     font-style: italic;
 }
-a:link, a:visited {
+
+a:link,
+a:visited {
     color: rgb(152, 209, 247);
     font-size: 2.5rem;
+    text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.history-entry {
+    border: 3px ridge gold;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.history-entry img {
+    max-width: 600px;
+    border-radius: 10px;
+}
 
 footer {
     margin-top: 100px;
@@ -108,39 +146,65 @@ footer {
     font-size: 70%;
     text-transform: uppercase;
 }
+
 @media (max-width: 900px) {
-    * { 
+    * {
         max-width: 100%;
         align-items: stretch;
     }
+
     body {
         max-width: 100%;
         height: auto;
     }
+
     header div {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
     header div h2 {
         text-align: center;
         font-size: 120%;
     }
+
     main {
         flex-direction: column;
-        gap: 0;    
+        gap: 0;
         justify-content: center;
         align-items: stretch;
     }
+
     .logo-image {
         max-width: 200px;
     }
+
     footer {
         position: relative;
     }
 }
-@media (max-width: 300px) {
+
+@media (max-width: 500px) {
     body {
         font-size: 85%;
+    }
+
+.history {
+    padding: 0;
+    border-radius: 0;
+}
+
+    .history-entry {
+        border: none;
+        border-top: 3px ridge gold;
+        border-radius: 0;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .history-entry img {
+        max-width: 100%;
+        border-radius: 0;
     }
 }
