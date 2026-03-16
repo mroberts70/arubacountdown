@@ -136,6 +136,14 @@ form div {
 form input[type=checkbox] {
     background-color: green;
 }
+form a:link, form a:visited {
+    font-size: 100%;
+    text-decoration: underline;
+}
+form a:link:hover, form a:visited:hover {
+    text-decoration: none;
+    color: red;
+}
 
 .history {
     display: flex;
